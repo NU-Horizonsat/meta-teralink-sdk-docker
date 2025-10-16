@@ -25,7 +25,7 @@ RUN chmod +x /tmp/sdk-installer.sh \
     && rm /tmp/sdk-installer.sh
 
 # Source environment for all shells
-RUN echo ". /opt/poky/5.2.999/environment-setup-i586-poky-linux" >> /etc/bash.bashrc
+RUN echo ". /opt/y/environment-setup-i586-poky-linux" >> /etc/bash.bashrc
 
 # Create a user
 RUN useradd -ms /bin/bash devuser && echo "devuser ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
