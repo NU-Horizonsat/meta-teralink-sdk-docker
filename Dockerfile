@@ -5,7 +5,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 # Install Yocto SDK dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential locales wget curl git xz-utils cpio diffstat python3 python3-pip \
-    python3-pexpect chrpath socat libsdl1.2-dev xterm unzip sudo vim \
+    python3-pexpect chrpath socat libsdl1.2-dev xterm unzip sudo vim file \
     && rm -rf /var/lib/apt/lists/*
 
 # Set locale
